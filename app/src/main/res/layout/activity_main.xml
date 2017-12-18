@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="us.mifeng.demo01.MainActivity">
+
+    <Button
+        android:id="@+id/openCarame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开相机"/>
+    <Button
+        android:id="@+id/openPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开相册选择单张图片"/>
+    <Button
+        android:id="@+id/openPictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开相册选择多张图片"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f4f4"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="3"
+        android:layout_weight="1"></GridView>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击上传"/>
+</LinearLayout>
